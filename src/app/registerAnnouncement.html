@@ -1,0 +1,75 @@
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="stylesheet" href="./registerAnnouncement.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+<title>Cadastro de Anúncio</title>
+
+<header>
+    <h1>Cadastre seu Anúncio</h1>
+</header>
+
+<form class="form">
+    <div class="form-announcement">
+        <label>Titulo do Anúncio:</label>
+        <input type="text" min="1" id="" class="form-announcement" placeholder="Quarto Individual em Republica Masculina" size="50" required/><br>
+
+        <p>Qual o tipo do imóvel?</p>
+            <input type="checkbox" id="apto" name="apto">
+            <label >Apartamento</label>
+            <input type="checkbox" id="house" name="house">
+            <label >Casa</label>
+            <input type="checkbox" id="kitnet" name="kitnet">
+            <label >Kitnet</label>
+            <input type="checkbox" id="sobreloja" name="sobreloja">
+            <label >Sobreloja</label><br><br>
+        
+        <label>Endereço:</label>
+        <input type="text" min="1" id="adress" class="form-announcement" placeholder="Rua Visconde Nassau 611" size="50" required/><br><br>
+
+        <label for="cars">Bairro/Região:</label>
+        <select name="select">
+            <option value="valor1">Zona 07</option> 
+            <option value="valor2" selected>Jardim Alvorada</option>
+            <option value="valor3">Vila Morangueira</option>
+            <option value="valor4">Parque Industrial</option>
+            <option value="valor5">Thermas</option>
+            <option value="valor6">Jardim Ouro Cola</option>
+          </select><br><br>
+
+        <label>Valor(Mensal):</label>
+        <input type="number"  id="vlMensal" class="form-announcement" placeholder="R$450,00" size="50" required/><br> <br>
+
+        <label>Data de Entrada:</label>
+        <input type="date"  id="dtEntrada" class="form-announcement" size="50" required/><br><br>
+
+        <p>Vaga: </p>
+            <input type="checkbox" id="masc" name="masc">
+            <label>Masculina</label>
+            <input type="checkbox" id="fem" name="fem">
+            <label>Feminina</label>
+            <input type="checkbox" id="mis" name="mis">
+            <label>Mista</label><br><br>
+
+        <label for="data">Telefone:</label>
+        <input type="tel"  id="" class="form-announcement" size="11" required/><br><br>    
+
+        <p>Descrição:<p>
+        <textarea id="desc" name="desc" rows="15" cols="80">
+           
+        </textarea><br><br>
+
+        <p>Informações Complementares: </p>
+          <input type="checkbox" id="smokes" name="smokes">
+          <label>Aceita Fumantes</label>
+          <input type="checkbox" id="garage" name="garage">
+          <label>Possui Garagem</label>
+          <input type="checkbox" id="animal" name="animal">
+          <label>Permite Animais</label><br><br>
+    </div>    
+    
+    <button class="btn btn-save" type="submit">Salvar Anúncio</button>
+    <button class="btn btn-cancel" type="submit">Cancelar</button>
+</form>
+        
+        

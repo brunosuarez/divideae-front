@@ -1,0 +1,8 @@
+ng generate component xyz
+ng add @angular/material
+ng add @angular/pwa
+ng add _____
+ng build --prod
+
+cli: https://angular.io/cli
+tutorial: https://angular.io/tutorial

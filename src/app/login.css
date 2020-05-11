@@ -1,0 +1,36 @@
+*{
+    background-color:rgb(194, 60, 60);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-login{
+    width: 320px;
+    height: 420px;
+    border: 2px solid ;
+    border-radius: 90px 50px 90px 0px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 68px 28px;
+    text-align: center;
+}
+
+.form-login input[type="text"], input[type="password"]{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    height: 15px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-align: center;
+}    
+
+.pgf-login{
+    text-align: center;
+    font-size: 220%;
+    font-family: 'Montserrat', sans-serif;
+}
