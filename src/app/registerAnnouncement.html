@@ -3,25 +3,34 @@
 <link rel="stylesheet" href="./registerAnnouncement.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-<title>Cadastro de Anúncio</title>
+<title>Cadastro - Anúncio</title>
 
 <header>
-    <h1>Cadastre seu Anúncio</h1>
-</header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Anúncios</a></li>
+            <li><a href="#">Como Funciona</a></li>
+            <li><a href="#">Cidades</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header><br>
 
-<form class="form">
+<h1>Cadastre seu Anúncio</h1>
+
+<form>
     <div class="form-announcement">
         <label>Titulo do Anúncio:</label>
-        <input type="text" min="1" id="" class="form-announcement" placeholder="Quarto Individual em Republica Masculina" size="50" required/><br>
+        <input type="text" min="1" placeholder="Quarto Individual em Republica Masculina" size="50" required/><br>
 
         <p>Qual o tipo do imóvel?</p>
-            <input type="checkbox" id="apto" name="apto">
+            <input type="radio" id="apto" name="apto">
             <label >Apartamento</label>
-            <input type="checkbox" id="house" name="house">
+            <input type="radio" id="house" name="house">
             <label >Casa</label>
-            <input type="checkbox" id="kitnet" name="kitnet">
+            <input type="radio" id="kitnet" name="kitnet">
             <label >Kitnet</label>
-            <input type="checkbox" id="sobreloja" name="sobreloja">
+            <input type="radio" id="sobreloja" name="sobreloja">
             <label >Sobreloja</label><br><br>
         
         <label>Endereço:</label>
@@ -44,11 +53,11 @@
         <input type="date"  id="dtEntrada" class="form-announcement" size="50" required/><br><br>
 
         <p>Vaga: </p>
-            <input type="checkbox" id="masc" name="masc">
+            <input type="radio" id="masc" name="masc">
             <label>Masculina</label>
-            <input type="checkbox" id="fem" name="fem">
+            <input type="radio" id="fem" name="fem">
             <label>Feminina</label>
-            <input type="checkbox" id="mis" name="mis">
+            <input type="radio" id="mis" name="mis">
             <label>Mista</label><br><br>
 
         <label for="data">Telefone:</label>
@@ -56,20 +65,24 @@
 
         <p>Descrição:<p>
         <textarea id="desc" name="desc" rows="15" cols="80">
-           
         </textarea><br><br>
 
         <p>Informações Complementares: </p>
-          <input type="checkbox" id="smokes" name="smokes">
+          <input type="radio" id="smokes" name="smokes">
           <label>Aceita Fumantes</label>
-          <input type="checkbox" id="garage" name="garage">
+          <input type="radio" id="garage" name="garage">
           <label>Possui Garagem</label>
-          <input type="checkbox" id="animal" name="animal">
+          <input type="radio" id="animal" name="animal">
           <label>Permite Animais</label><br><br>
-    </div>    
+
+          <p>Anexar Imagens</p>
+          <input type="file" />
+    </div><br><br>
     
     <button class="btn btn-save" type="submit">Salvar Anúncio</button>
     <button class="btn btn-cancel" type="submit">Cancelar</button>
 </form>
+
+<footer>Arke Projects</footer>
         
         
