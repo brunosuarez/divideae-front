@@ -1,24 +1,12 @@
-<!--
-
-<button class="btn test" type="submit">Go Login</button><br><br>
-
-<button class="btn test" type="submit">Go User Cadastro</button><br><br>
-
-<button class="btn test" type="submit">Go Cadastro Announcement Tenant</button><br><br>
-
-<button class="btn test" type="submit">Go Cadastro Announcement Locator</button><br><br>
-
-<button class="btn test" type="submit">Go Listing Announcement</button><br><br>-->
-
-<h1>Angular Router App</h1>
-<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav>
+<h1>DivideAê</h1>
+<nav class="menu">
   <ul>
     <li><a routerLink="/appComponent" routerLinkActive="active">App Component</a></li>
+
     <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+    <li><a routerLink="/registerAnnouncement" routerLinkActive="active">Registro de Anuncio</a></li>
   </ul>
 </nav>
-<!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
 
 

@@ -1,0 +1,67 @@
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="src\favicon.ico">
+<link rel="stylesheet" href="./register-user-tenant.component.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+<title>Cadastro - Usuário</title>
+
+<header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#"><b>Anúncios</b></a></li>
+            <li><a href="#"><b>Como Funciona</b></a></li>
+            <li><a href="#"><b>Cidades</b></a></li>
+            <li><a href="#"><b>Contato</b></a></li>
+        </ul>
+    </nav>
+</header><br>
+
+<h1>Faça seu Cadastro</h1>
+
+<form>
+    <div class="form-register-user">
+        <label>Digite seu Nome Completo:</label>
+        <input type="text" min="1" placeholder="Ex: José da Silva" size="50" required/><br><br>
+
+        <label>CPF:</label>
+        <input type="number" placeholder="" maxlength="11" required/><br>
+
+        <p>Sexo</p>
+            <input type="radio">
+            <label>Masculino</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label>Feminino</label><br><br>
+
+        <label >Idade:</label>
+        <input type="number" placeholder="" maxlength="2" required/><br><br>
+
+        <label>Telefone(Com DDD):</label>
+        <input type="tel" class="form-register-user" size="11" required/><br><br>
+
+        <label for="city">Cidade:</label>
+        <select name="select">
+            <option value="valor1">Maringá</option>
+            <option value="valor2">Sarandi</option>
+            <option value="valor3">Londrina</option>
+            <option value="valor4">Curitiba</option>
+        </select><br>
+
+        <p>Ocupação</p>
+            <input type="radio">
+            <label>Estudo</label><br>
+            <input type="radio">
+            <label>Trabalho</label><br>
+            <input type="radio">
+            <label>Ambos</label><br>
+            <input type="radio">
+            <label>Outro</label><br><br>
+
+        <p>Anexe uma foto</p>  
+        <input type="file">  <br><br>
+
+        <button class="btn btn-save-user" type="submit">Salvar Cadastro</button>
+        <button class="btn btn-cancel-user" type="submit">Cancelar</button>
+    </div>
+</form>
+
+<footer>Arke Projects</footer>

@@ -13,6 +13,7 @@ export class AnnouncementLocator{
         public phoneLocator: Number,
         public garageLocator: Boolean,
         public animalLocator: String,
+        public acceptAnimal: Boolean
     ){
 
     }

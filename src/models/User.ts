@@ -7,6 +7,7 @@ export class User{
         public phoneUser: Number,
         public cityUser: Number,
         public occupationUser: String,
+        public isLocator: Boolean,
         public score: Number
     ){
         

@@ -4,16 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './login/login.component';
-import { RegisterAnnouncementComponent } from './register-announcement/register-announcement.component';
-import { RegisterUserComponent } from './register-user/register-user.component';
-import { ListingAnnouncementComponent } from './listing-announcement/listing-announcement.component';
+import { LoginComponent } from './login/components/login.component';
+
+import { RegisterUserComponent } from './register-user/components/tenant/register-user-tenant.component';
+import { ListingAnnouncementComponent } from './announcement/components/listing-announcement/listing-announcement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterAnnouncementComponent,
+    
     RegisterUserComponent,
     ListingAnnouncementComponent
   ],
