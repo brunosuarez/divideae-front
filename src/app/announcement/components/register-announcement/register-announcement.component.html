@@ -1,9 +1,10 @@
+<title>Cadastro de Anúncio - DivideAê</title>
+
 <meta charset="utf-8">
-<link rel="icon" type="image/x-icon" href="src\favicon.ico">
+
+<link rel="icon" type="image/x-icon" href="../../../../favicon.ico">
 <link rel="stylesheet" href="register-announcement.component.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-<title>Cadastro - Anúncio</title>
 
 <header>
     <nav class="menu">
@@ -16,73 +17,85 @@
     </nav>
 </header><br>
 
-<h1>Cadastre seu Anúncio</h1>
-
-<form>
-    <div class="form-announcement">
-        <label>Titulo do Anúncio:</label>
-        <input type="text" min="1" placeholder="Quarto Individual em Republica Masculina" size="50" required/><br>
-
-        <p>Qual o tipo do imóvel?</p>
-            <input type="radio" id="apto" name="apto">
-            <label >Apartamento</label>
-            <input type="radio" id="house" name="house">
-            <label >Casa</label>
-            <input type="radio" id="kitnet" name="kitnet">
-            <label >Kitnet</label>
-            <input type="radio" id="sobreloja" name="sobreloja">
-            <label >Sobreloja</label><br><br>
-        
-        <label>Endereço:</label>
-        <input type="text" min="1" id="adress" class="form-announcement" placeholder="Rua Visconde Nassau 611" size="50" required/><br><br>
-
-        <label for="cars">Bairro/Região:</label>
-        <select name="select">
-            <option value="valor1">Zona 07</option> 
-            <option value="valor2" selected>Jardim Alvorada</option>
-            <option value="valor3">Vila Morangueira</option>
-            <option value="valor4">Parque Industrial</option>
-            <option value="valor5">Thermas</option>
-            <option value="valor6">Jardim Ouro Cola</option>
-          </select><br><br>
-
-        <label>Valor(Mensal):</label>
-        <input type="number"  id="vlMensal" class="form-announcement" placeholder="R$450,00" size="50" required/><br> <br>
-
-        <label>Data de Entrada:</label>
-        <input type="date"  id="dtEntrada" class="form-announcement" size="50" required/><br><br>
-
-        <p>Vaga: </p>
-            <input type="radio" id="masc" name="masc">
-            <label>Masculina</label>
-            <input type="radio" id="fem" name="fem">
-            <label>Feminina</label>
-            <input type="radio" id="mis" name="mis">
-            <label>Mista</label><br><br>
-
-        <label for="data">Telefone:</label>
-        <input type="tel"  id="" class="form-announcement" size="11" required/><br><br>    
-
-        <p>Descrição:<p>
-        <textarea id="desc" name="desc" rows="15" cols="80">
-        </textarea><br><br>
-
-        <p>Informações Complementares: </p>
-          <input type="radio" id="smokes" name="smokes">
-          <label>Aceita Fumantes</label>
-          <input type="radio" id="garage" name="garage">
-          <label>Possui Garagem</label>
-          <input type="radio" id="animal" name="animal">
-          <label>Permite Animais</label><br><br>
-
-          <p>Anexar Imagens</p>
-          <input type="file" />
-    </div><br><br>
+<body>
+    <form action="">
+        <h1>Cadastre seu Anúncio</h1>
+        <fieldset>
+            <legend>
+                <h2>Dados do Anúncio</h2>
+            </legend>
     
-    <button class="btn btn-save" type="submit">Salvar Anúncio</button>
-    <button class="btn btn-cancel" type="submit">Cancelar</button>
-</form>
+            <div class="field-title">
+                <label for="">Título do Anúncio</label><br>
+                <input type="text" name="name" size="70">
+            </div>
 
-<footer>Arke Projects</footer>
+            <div class="field-group-state-and-city">
+                    <label>Estado</label>
+                    <select name="state-annou" id="#state-annou">
+                        <option value="0">Selecione o Estado</option>
+                    </select>
+
+                    <label>Cidade</label>
+                    <select name="city-annou" id="#city-annou">
+                        <option value="0">Selecione a Cidade</option>
+                    </select>
+            </div>
+    
+            <h3>Tipo do Imóvel:</h3>
+                <input type="radio" id="apto" name="apto">
+                <label >Apartamento</label>
+                <input type="radio" id="house" name="house">
+                <label >Casa</label>
+                <input type="radio" id="kitnet" name="kitnet">
+                <label >Kitnet</label>
+                <input type="radio" id="sobreloja" name="sobreloja">
+                <label >Sobreloja</label>
+                <input type="radio" id="sobreloja" name="sobreloja">
+                <label >Outro</label><br><br>
+       
+                <div class="field-group">
+                    <label for="address">Endereço:</label>
+                    <input type="text" name="address" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <label for="address2">Número/Complemento:</label>
+                    <input type="text" name="address2">
+                </div><br>
+    
+                <label>Valor(Mensal):</label>
+                <input type="number" id="vlMensal" class="form-announcement" placeholder="R$450,00" size="50" required/><br><br>
+    
+                <label>Data de Entrada:</label>
+                <input type="date"  id="dtEntrada" class="form-announcement" size="50" required/><br>
+    
+                <h3>Vaga: </h3>
+                    <input type="radio" id="masc" name="masc">
+                    <label>Masculina</label>
+                    <input type="radio" id="fem" name="fem">
+                    <label>Feminina</label>
+                    <input type="radio" id="mis" name="mis">
+                    <label>Mista</label><br><br>
+    
+                <label for="data">Telefone:</label>
+                <input type="tel"  id="" class="form-announcement" size="20" required/><br>
+
+                <h3>Descrição:<p></h3>
+                    <div class="description">
+                            <textarea id="desc" name="desc" rows="20" cols="90">
+                            </textarea><br><br>
+                    </div>
+    
+                <h3>Informações Complementares: </h3>
+                    <input type="radio" id="smokes" name="smokes">
+                    <label>Aceita Fumantes</label>
+                    <input type="radio" id="garage" name="garage">
+                    <label>Possui Garagem</label>
+                    <input type="radio" id="animal" name="animal">
+                    <label>Permite Animais</label><br><br>
+
+            <button class="bt-save-announcement" type="submit">Salvar Anúncio</button>
+            <button class="bt-cancel-announcement" type="reset">Cancelar</button>
+        </fieldset>
         
-        
+    </form>
+</body>

@@ -1,12 +1,27 @@
-<h1>DivideAê</h1>
-<nav class="menu">
-  <ul>
-    <li><a routerLink="/appComponent" routerLinkActive="active">App Component</a></li>
+<head>
+  <title>Home - DivideAê</title>
 
-    <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
-    <li><a routerLink="/registerAnnouncement" routerLinkActive="active">Registro de Anuncio</a></li>
-  </ul>
-</nav>
+  <link rel="stylesheet" href="./app.component.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+
+<body>
+  <div class="initial-information">
+    <img src="../assets/home.png" alt="Home">
+    <h1>DivideAê</h1>
+    <h2>Moradia Compartilhada</h2><br>
+    <p>Está procurando alguém para dividir seu espaço?</p>
+    <p>Está procurando um espaço para dividir com alguém?</p><br>
+    <p><b>O DivideAê é o lugar certo para encontrar o que procura!</b></p>
+    <br><br>
+    <a routerLink="/login" routerLinkActive="active">Login</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Confira os Anúncios</a><br>
+    <!--<a routerLink="/registerAnnouncement" routerLinkActive="active">Cadastre Seu Anúncio</a>-->
+  </div>
 <router-outlet></router-outlet>
+</body>
+
+
 
 

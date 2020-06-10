@@ -1,29 +1,19 @@
 *{
     font-family: 'Montserrat', sans-serif;
-    border: none;
- }
-
- body{
-    background: rgb(186,77,77);
-    background: linear-gradient(90deg, rgba(186,77,77,1) 0%, rgba(171,45,31,1) 0%, rgba(171,31,31,1) 91%);
-}  
+}
 
 header{
-	height: 3em;
-	color: white;
-	margin-bottom: 1em;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
 }
 
-h1{
-    text-align: left;
-}
-
-.menu {
-    background-color: white;
+.menu{
+    background-color: black;
     position: fixed;
     top: 0;
-    width: 100vw;
-  }
+    width: 100%;
+}
   
 .menu ul {
     display: flex;
@@ -35,26 +25,36 @@ h1{
 }
   
 .menu a {
-    color: teal;
+    color: white;
     display: block;
     padding: 10px;
     text-decoration: none;
 }
 
-.form-announcement{
-  /*  border: none;
-    outline: none;
-    border-bottom: 1px solid;
-    background: transparent;*/
+form{
+    font-weight: bold;
 }
 
-.btn{    
-    flex-direction: row;
-} 
+fieldset{
+    border: 1px solid;
+}
 
-footer{
-    background-color: white;
-    text-align: center;
+.description{
+   
+    font-size: 20px;
+}
+
+#desc{
+    background-color: black;
+}
+
+.bt-save-announcement, .bt-cancel-announcement{    
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
 }
 
 
